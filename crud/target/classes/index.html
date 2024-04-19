@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Crud</title>
+    </head>
+
+    <body>
+        <div style="width: 80%; margin: 0 auto; background-color: #f0f0f0">
+            <form th:action="@{/create}" method="post">
+                <lable>Имя</lable><br>
+                <input type="text" name="name" id="name"><br>
+                <lable>Фамилия</lable><br>
+                <input type="text" name="surname" id="surname"><br>
+                <lable>Отдел</lable><br>
+                <input type="text" name="departament" id="departament"><br>
+                <lable>Зарплата</lable><br>
+                <input type="number" name="salary" id="salary"><br>
+                <input type="submit" value="отправить">
+            </form>
+            <p th:text="${message}"></p>
+        </div>
+    </body>
+</html>
